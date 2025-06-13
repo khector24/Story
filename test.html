@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhancement Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background-color: #f9fafb;
+      }
+
+      header {
+        background: linear-gradient(to right, #2563eb, #3b82f6);
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+
+      section {
+        padding: 4rem 1rem;
+        text-align: center;
+      }
+
+      .wave-divider {
+        display: block;
+        width: 100%;
+        line-height: 0;
+      }
+
+      .tech-section {
+        background-color: #e2e8f0;
+      }
+
+      .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .tech-icons img {
+        width: 60px;
+        height: 60px;
+        filter: grayscale(100%);
+        transition: filter 0.3s, transform 0.3s;
+      }
+
+      .tech-icons img:hover {
+        filter: none;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 data-aos="fade-down">Kenny F. Hector</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Full-Stack Developer | AWS Certified
+      </p>
+    </header>
+
+    <!-- SVG Curve Divider -->
+    <svg
+      class="wave-divider"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 120"
+    >
+      <path fill="#f9fafb" d="M0,96L1440,0L1440,120L0,120Z"></path>
+    </svg>
+
+    <section data-aos="fade-up">
+      <h2>What I Do</h2>
+      <p>
+        I build fast, scalable full-stack web apps using modern tools and cloud
+        services.
+      </p>
+    </section>
+
+    <!-- Another SVG Divider -->
+    <svg
+      class="wave-divider"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 120"
+    >
+      <path fill="#e2e8f0" d="M0,0L1440,120L1440,0L0,0Z"></path>
+    </svg>
+
+    <section class="tech-section" data-aos="fade-up">
+      <h2>Tech I Use</h2>
+      <div class="tech-icons">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          alt="Node.js"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg"
+          alt="AWS"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          alt="HTML5"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          alt="CSS3"
+        />
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
